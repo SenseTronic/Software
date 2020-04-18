@@ -1,5 +1,6 @@
 from raspi_lora import LoRa, ModemConfig
 import time
+
 # This is our callback function that runs when a message is received
 def on_recv(payload):
     print("From:", payload.header_from)

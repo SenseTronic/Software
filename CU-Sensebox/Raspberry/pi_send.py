@@ -14,5 +14,5 @@ while True:
     send_to_wait("teste", 255, header_flags=0)
     time.sleep(2)
 
-# And remember to call this as your program exits...
+# And remember to call this as your program exits... 
 lora.close()

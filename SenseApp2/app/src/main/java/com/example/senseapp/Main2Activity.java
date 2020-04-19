@@ -40,7 +40,9 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(View view){
               validate(Name.getText().toString(),Password.getText().toString());
               //add_to_Database();
-                //viewAll();
+
+
+                viewAll();
             }
         });
 
@@ -87,12 +89,12 @@ public class Main2Activity extends AppCompatActivity {
 
         StringBuffer buffer = new StringBuffer();
         while (res.moveToNext()) {
-            buffer.append("ID:"+ res.getString(0)+ "\n\n" );
+            buffer.append("ID:"+ res.getString(0)+ "\n" );
             buffer.append("Name:"+ res.getString(1)+ "\n" );
             buffer.append("Password:"+ res.getString(2)+ "\n" );
             buffer.append("Temp_Threshold:"+ res.getString(3)+ "\n" );
             buffer.append("Lum_Threshold:"+ res.getString(4)+ "\n" );
-            buffer.append("Hum_Threshold:"+ res.getString(5)+ "\n" );
+            buffer.append("Hum_Threshold:"+ res.getString(5)+ "\n\n" );
         }
         ShowMessage("Data", buffer.toString());
         //}

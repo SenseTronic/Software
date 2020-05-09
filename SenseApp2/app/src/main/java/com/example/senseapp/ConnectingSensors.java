@@ -33,6 +33,7 @@ public class ConnectingSensors extends AppCompatActivity {
         setContentView(R.layout.activity_connecting_sensors);
 
 
+
         button4 = (Button) findViewById(R.id.button4);
         button4.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -78,4 +79,5 @@ public class ConnectingSensors extends AppCompatActivity {
         Intent intent = new Intent(this, four.class);
         startActivity(intent);
     }
+
 }

@@ -27,13 +27,24 @@ public class one extends AppCompatActivity {
     RadioButton radioButton;
     TextView textView;
 
+    private static final String abs="";
+    TextView sensor;
+
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_one);
 
+
         radioGroup = findViewById(R.id.radioGroup);
         textView = findViewById(R.id.text_view_selected);
+
+        sensor = findViewById(R.id.textView30);
+
 
         Button buttonApply = findViewById(R.id.button_apply);
         buttonApply.setOnClickListener(new View.OnClickListener() {
@@ -44,8 +55,12 @@ public class one extends AppCompatActivity {
                 radioButton = findViewById(radioId);
 
                 textView.setText("Your choice: " + radioButton.getText());
+                String abs= radioButton.getText().toString();
+                sensor.setText(abs);
             }
+
         });
+
     }
 
     public void checkButton(View v) {
@@ -55,6 +70,7 @@ public class one extends AppCompatActivity {
 
         Toast.makeText(this, "Selected Radio Button: " + radioButton.getText(),
                 Toast.LENGTH_SHORT).show();
-    }
 
+
+    }
 }

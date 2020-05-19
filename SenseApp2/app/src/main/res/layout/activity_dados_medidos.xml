@@ -8,6 +8,19 @@
     android:background="@android:color/white"
     tools:context=".MeasuredData">
 
+    <EditText
+        android:id="@+id/etName2"
+        android:layout_width="97dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="#B9C8F8"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
     <Button
         android:id="@+id/button12"
         android:layout_width="32dp"

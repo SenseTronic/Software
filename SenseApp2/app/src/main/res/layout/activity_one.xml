@@ -2,116 +2,32 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/sensor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="312dp"
-        android:layout_height="123dp"
-        android:layout_below="@+id/button_apply"
-        android:layout_alignStart="@+id/button_apply"
-        android:layout_alignLeft="@+id/button_apply"
-        android:layout_alignEnd="@+id/button_apply"
-        android:layout_alignRight="@+id/button_apply"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-109dp"
-        android:layout_marginLeft="-109dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="-114dp"
-        android:layout_marginRight="-114dp"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
-
-        <RadioButton
-            android:id="@+id/radio_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:onClick="checkButton"
-            android:text="Temperature" />
-
-        <RadioButton
-            android:id="@+id/radio_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="checkButton"
-            android:text="Luminosity" />
-
-        <RadioButton
-            android:id="@+id/radio_three"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="checkButton"
-            android:text="Humidity" />
-
-        <RadioButton
-            android:id="@+id/radio_four"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="checkButton"
-            android:text="Pression" />
-
-    </RadioGroup>
-
-    <TextView
-        android:id="@+id/text_view_selected"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/radioGroup"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp"
-        android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/button_apply"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text_view_selected"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="2dp"
-        android:background="#A8CDF7"
-        android:text="apply"
-        android:textColor="@android:color/white" />
-
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
-        android:layout_height="65dp"
-        android:layout_above="@+id/radioGroup"
-        android:layout_alignEnd="@+id/radioGroup"
-        android:layout_alignRight="@+id/radioGroup"
-        android:layout_marginEnd="-11dp"
-        android:layout_marginRight="-11dp"
-        android:layout_marginBottom="196dp"
-        android:text="PORT 1"
-        android:textColor="#A8CDF7"
-        android:textSize="40sp" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:layout_marginBottom="266dp"
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/textView30"
-        android:layout_width="148dp"
-        android:layout_height="31dp"
-        android:layout_above="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView21"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="261dp"
-        android:layout_marginRight="261dp"
-        android:layout_marginBottom="82dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="175dp"
         android:text="TextView" />
-
 
 </RelativeLayout>

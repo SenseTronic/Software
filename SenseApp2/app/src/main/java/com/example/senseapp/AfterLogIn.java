@@ -10,6 +10,7 @@ import android.widget.Button;
 public class AfterLogIn extends AppCompatActivity {
     private Button button4;
     private Button button2;
+    private Button button17;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +24,27 @@ public class AfterLogIn extends AppCompatActivity {
                 openMeasuredData();
             }
         });
+
         button2 = (Button) findViewById(R.id.button2);
+        //button2.setOnClickListener(new View.OnClickListener(){
+        //    @Override
+        //    public void onClick(View v){
+        //        openConnectingSensors();
+        //    }
+        //});
+
         button2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                openConnectingSensors();
+                openTesting();
+            }
+        });
+
+        button17 = (Button) findViewById(R.id.button17);
+        button17.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openPersonal();
             }
         });
     }
@@ -39,4 +56,16 @@ public class AfterLogIn extends AppCompatActivity {
         Intent intent = new Intent(this, ConnectingSensors.class);
         startActivity(intent);
     }
+
+    public void openPersonal(){
+        Intent intent = new Intent(this, Personal.class);
+        startActivity(intent);
+    }
+
+
+    public void openTesting(){
+        Intent intent = new Intent(this, testing2.class);
+        startActivity(intent);
+    }
+
 }

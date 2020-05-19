@@ -26,12 +26,17 @@ public class ConnectingSensors extends AppCompatActivity {
     private Button button8;
     private TextView Info1;
 
+    TextView porto1;
+
+
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connecting_sensors);
 
+
+        porto1 = findViewById(R.id.porto1);
 
 
         button4 = (Button) findViewById(R.id.button4);
@@ -62,6 +67,16 @@ public class ConnectingSensors extends AppCompatActivity {
                 openFour();
             }
         });
+
+       //3 linhas abaixo check!!!
+       // Intent i = getIntent();
+       // String sensor= i.getExtras().getString("sensor");
+       // porto1.setText(sensor);
+
+
+       //String text = myIntent.getStringExtra("abs");
+       //TextView Info1 = findViewById(R.id.porto1);
+       //TextView.setText(abs);
     }
     public void openOne(){
         Intent intent = new Intent(this, one.class);

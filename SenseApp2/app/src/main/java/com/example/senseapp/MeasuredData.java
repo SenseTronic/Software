@@ -31,15 +31,21 @@ public class MeasuredData extends AppCompatActivity {
     private EditText editText1;
     //private EditText editTextMessage;
 
-    private  EditText teste;
+    EditText teste;
     private Double testenumero;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dados_medidos);
 
-        //teste.getText().toString();
+        teste =findViewById(R.id.etName2);
+        String teste2=teste.getText().toString();
+
+
+        testenumero= Double.parseDouble(teste2);
+
         //teste = (EditText)findViewById(R.id.teste);
 
         //testenumero= Double.parseDouble(teste.getText().toString());
@@ -58,6 +64,9 @@ public class MeasuredData extends AppCompatActivity {
 
 
 
+        if(testenumero>20){
+            sendOnChannelHum();
+        }
     }
     public void sendOnChannelTemp(View v){
 

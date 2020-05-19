@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".sensor"></activity>
+        <activity android:name=".testing2" />
+        <activity android:name=".Personal" />
         <activity android:name=".four" />
         <activity android:name=".three" />
         <activity android:name=".two" />
@@ -23,9 +25,6 @@
         <activity android:name=".LogIn" />
         <activity android:name=".AboutUs" />
         <activity android:name=".Contacts" />
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:label="@string/title_activity_login" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

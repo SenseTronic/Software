@@ -27,7 +27,7 @@ public class one extends AppCompatActivity {
     RadioButton radioButton;
     TextView textView;
 
-    private static final String abs="";
+    private String abs="";
     TextView sensor;
 
 
@@ -55,11 +55,19 @@ public class one extends AppCompatActivity {
                 radioButton = findViewById(radioId);
 
                 textView.setText("Your choice: " + radioButton.getText());
-                String abs= radioButton.getText().toString();
+                abs= radioButton.getText().toString();
                 sensor.setText(abs);
             }
 
         });
+
+       // Intent i = new Intent(this, ConnectingSensors.class);
+       // i.putExtra("sensor",abs);
+       // startActivity(i);
+
+        //Intent myIntent = myIntent(view.getContext(),ConnectingSensors.class);
+        //myIntent.putExtra("abs",abs);
+        //startActivity(myIntent);
 
     }
 

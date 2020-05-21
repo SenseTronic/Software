@@ -36,14 +36,7 @@ class SensorActivity : AppCompatActivity() {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_sensor);
 
-
-
-
-          //     mqttClient.connect(BROKER) //substituir BROKER
-          //     mqttClient.setCallBack(arrayOf(TEMPERATURE_TOPIC, HUMIDITY_TOPIC), ::setData)
-
-
-
+            mqttClient.connect(arrayOf(TEMPERATURE_TOPIC, HUMIDITY_TOPIC), ::setData)
         }
 
         private fun setData(topic: String, msg: MqttMessage) {

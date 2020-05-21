@@ -7,117 +7,154 @@
     android:background="@android:color/white"
     tools:context=".Personal">
 
-    <TextView
-        android:id="@+id/textView58"
-        android:layout_width="83dp"
-        android:layout_height="38dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="28dp"
-        android:background="@android:color/white"
-        android:text="Value"
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="53dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Insert"
+        android:inputType="textPersonName"
         android:textColor="@android:color/black"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView50"
-        app:layout_constraintEnd_toStartOf="@+id/button26" />
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/button25"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="113dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="     RefValue:30%"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView57" />
 
     <TextView
         android:id="@+id/textView57"
-        android:layout_width="85dp"
-        android:layout_height="33dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="28dp"
-        android:background="@android:color/white"
-        android:text="Value"
+        android:layout_width="113dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="     RefValue:30%"
         android:textColor="@android:color/black"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView45"
-        app:layout_constraintEnd_toStartOf="@+id/button20" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
 
-    <TextView
-        android:id="@+id/textView50"
-        android:layout_width="86dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginRight="72dp"
-        android:layout_marginBottom="100dp"
-        android:background="@android:color/white"
-        android:text="Value"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView12"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView38"
-        android:layout_width="116dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="24dp"
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="64dp"
         android:background="#A8CDF7"
-        android:text="Luminosity"
+        android:onClick="saveA"
+        android:text="Set"
         android:textColor="@android:color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView43"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#A8CDF7"
+        android:onClick="loadA"
+        android:text="Show"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <Button
+        android:id="@+id/button35"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#A8CDF7"
+        android:onClick="loadB"
+        android:text="Show"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button25" />
 
     <TextView
         android:id="@+id/textView42"
-        android:layout_width="117dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="104dp"
-        android:background="#A8CDF7"
-        android:text="Humidity"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView12"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView43"
-        android:layout_width="117dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="24dp"
-        android:background="#A8CDF7"
-        android:text="Pression"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView44"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView45"
-        android:layout_width="83dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
-        android:layout_marginBottom="24dp"
-        android:background="@android:color/white"
-        android:text="Value"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView58"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView44"
-        android:layout_width="117dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="113dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
         android:background="#A8CDF7"
         android:text="Temperature"
         android:textColor="@android:color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView42"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/button36"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="113dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#A8CDF7"
+        android:text="Pression"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView39"
+        app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="113dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#A8CDF7"
+        android:text="Luminosity"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/button20"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="113dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#A8CDF7"
+        android:text="Humidity"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView57"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <Button
+        android:id="@+id/button36"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:background="#A8CDF7"
+        android:onClick="saveB"
+        android:text="Set"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/editText6"
+        app:layout_constraintTop_toBottomOf="@+id/button20" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -136,8 +173,8 @@
 
     <TextView
         android:id="@+id/textView32"
-        android:layout_width="157dp"
-        android:layout_height="56dp"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginEnd="10dp"
@@ -152,8 +189,8 @@
 
     <TextView
         android:id="@+id/textView29"
-        android:layout_width="268dp"
-        android:layout_height="55dp"
+        android:layout_width="256dp"
+        android:layout_height="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="16dp"
@@ -166,60 +203,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button20"
-        android:layout_width="31dp"
-        android:layout_height="37dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="24dp"
-        android:background="#A8CDF7"
-        android:onClick="countIN"
-        android:text="+"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/textView45"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="53dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Insert"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/button35"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
-    <Button
-        android:id="@+id/button24"
-        android:layout_width="31dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="24dp"
-        android:background="#A8CDF7"
-        android:onClick="countDE"
-        android:text="-"
-        android:textColor="@android:color/white"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView45"
-        app:layout_constraintEnd_toStartOf="@+id/textView57" />
-
-    <Button
-        android:id="@+id/button25"
-        android:layout_width="32dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="28dp"
-        android:background="#A8CDF7"
-        android:onClick="countDE2"
-        android:text="-"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/textView50"
-        app:layout_constraintEnd_toStartOf="@+id/textView58" />
-
-    <Button
-        android:id="@+id/button26"
-        android:layout_width="30dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="28dp"
-        android:background="#A8CDF7"
-        android:onClick="countIN2"
-        android:text="+"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/textView50"
-        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

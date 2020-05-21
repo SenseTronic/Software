@@ -17,7 +17,7 @@
         android:hint="Username"
         android:inputType="textPersonName"
         android:textColor="#B9C8F8"
-        android:textSize="40sp"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
 

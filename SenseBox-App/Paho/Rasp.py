@@ -4,7 +4,7 @@ broker_url = "iot.eclipse.org"
 
 import paho.mqtt.client as mqtt
 import time
-import Adafruit_DHT as dht
+#import Adafruit_DHT as dht
 #from variables import *        ----pus ali em cima
 
 def mqtt_client_connect():

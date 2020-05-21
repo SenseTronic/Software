@@ -40,11 +40,9 @@ public class MeasuredData extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dados_medidos);
 
-        teste =findViewById(R.id.etName2);
-        String teste2=teste.getText().toString();
-
-
-        testenumero= Double.parseDouble(teste2);
+        //teste =findViewById(R.id.etName2);
+        //String teste2=teste.getText().toString();
+        //testenumero= Double.parseDouble(teste2);   //o erro é originado nesta linha
 
         //teste = (EditText)findViewById(R.id.teste);
 
@@ -62,24 +60,22 @@ public class MeasuredData extends AppCompatActivity {
 
         notificationManager = NotificationManagerCompat.from(this);
 
+        //sendOnChannelTemp(testenumero);
 
 
-        if(testenumero>20){
-            sendOnChannelHum();
-        }
     }
     public void sendOnChannelTemp(View v){
+          //if(testenumero>0) {
+              Notification notification = new NotificationCompat.Builder(this, CHANNEL_1_ID)
+                      .setSmallIcon(R.drawable.ic_message)
+                      .setContentTitle("Warning")                            //title
+                      .setContentText("Temperature-Too High!")               //message
+                      .setPriority(NotificationCompat.PRIORITY_HIGH)
+                      .setCategory(NotificationCompat.CATEGORY_MESSAGE)
+                      .build();
 
-            Notification notification = new NotificationCompat.Builder(this, CHANNEL_1_ID)
-                    .setSmallIcon(R.drawable.ic_message)
-                    .setContentTitle("Warning")                            //title
-                    .setContentText("Temperature-Too High!")               //message
-                    .setPriority(NotificationCompat.PRIORITY_HIGH)
-                    .setCategory(NotificationCompat.CATEGORY_MESSAGE)
-                    .build();
-
-            notificationManager.notify(1, notification);
-
+              notificationManager.notify(1, notification);
+          //}
     }
     public void sendOnChannelHum(View v){
 

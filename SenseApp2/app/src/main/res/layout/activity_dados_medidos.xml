@@ -8,68 +8,16 @@
     android:background="@android:color/white"
     tools:context=".MeasuredData">
 
-    <EditText
-        android:id="@+id/etName2"
-        android:layout_width="97dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="44dp"
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName"
-        android:textColor="#B9C8F8"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="32dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="36dp"
-        android:onClick="sendOnChannelPres"
-        android:text="P"
-        app:layout_constraintBottom_toTopOf="@+id/imageView10"
-        app:layout_constraintStart_toEndOf="@+id/button13"
-        app:layout_constraintTop_toBottomOf="@+id/textView22"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="31dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginBottom="56dp"
-        android:onClick="sendOnChannelLum"
-        android:text="L"
-        app:layout_constraintBottom_toTopOf="@+id/imageView10"
-        app:layout_constraintStart_toEndOf="@+id/button11"
-        app:layout_constraintTop_toBottomOf="@+id/textView22"
-        app:layout_constraintVertical_bias="1.0" />
-
-
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="24dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:background="#A8CDF7"
-        android:text=">"
-        android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button16" />
 
     <TextView
         android:id="@+id/textView22"
-        android:layout_width="69dp"
-        android:layout_height="67dp"
-        android:text="dados"
-        app:layout_constraintEnd_toStartOf="@+id/button16"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_width="86dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView18"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -79,50 +27,11 @@
         android:layout_height="63dp"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
-        android:text="Port 3"
+        android:text="Port 4"
         android:textColor="#A8CDF7"
         android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="24dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:background="#A8CDF7"
-        android:text=">"
-        android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button15" />
-
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="24dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:background="#A8CDF7"
-        android:text=">"
-        android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14" />
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="24dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:background="#A8CDF7"
-        android:text=">"
-        android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/textView11"
@@ -141,27 +50,28 @@
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="69dp"
-        android:layout_height="65dp"
+        android:layout_width="86dp"
+        android:layout_height="62dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
-        android:text="dados"
-        app:layout_constraintEnd_toStartOf="@+id/button15"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView12"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="69dp"
+        android:layout_width="86dp"
         android:layout_height="59dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
-        android:layout_marginTop="76dp"
-        android:text="dados"
-        app:layout_constraintEnd_toStartOf="@+id/button14"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -236,44 +146,15 @@
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="69dp"
-        android:layout_height="67dp"
+        android:layout_width="86dp"
+        android:layout_height="68dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
-        android:text="dados"
-        app:layout_constraintEnd_toStartOf="@+id/button16"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="32dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginLeft="84dp"
-        android:layout_marginTop="40dp"
-        android:onClick="sendOnChannelTemp"
-        android:text="T"
-        app:layout_constraintBottom_toTopOf="@+id/imageView10"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18"
-        app:layout_constraintVertical_bias="0.034" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="33dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginBottom="56dp"
-        android:onClick="sendOnChannelHum"
-        android:text="H"
-        app:layout_constraintBottom_toTopOf="@+id/imageView10"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/textView18"
-        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

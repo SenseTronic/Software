@@ -42,14 +42,16 @@ class SensorActivity : AppCompatActivity() {
         private fun setData(topic: String, msg: MqttMessage) {
 
             //declaração de uma TextView
-            var temperatura: TextView? = null
+            //var temperatura: TextView? = null
+
             //associação à textView56
-            temperatura = findViewById(R.id.textView56)
+            //temperatura = findViewById(R.id.textView56)
 
             //declaração de uma TextView
-            var humidade: TextView? = null
+            //var humidade: TextView? = null
+
             //associação à textView55
-            humidade = findViewById(R.id.textView55)
+           // humidade = findViewById(R.id.textView55)
 
 
 
@@ -58,20 +60,19 @@ class SensorActivity : AppCompatActivity() {
                     val text_temp= " ${String(msg.payload)} ° c"
 
                     //enviar a String acima para a textView
-                    humidade.setText(text_temp)
+                    //humidade.setText(text_temp)
 
-                    //println(text_temp)
+                    println(text_temp)
                 }
                 else -> {
                     val text = " ${String(msg.payload)}"
 
                     //enviar a String acima para a textView
-                    temperatura.setText(text)
+                    //temperatura.setText(text)
 
                     print(text)
                 }
             }
-
         }
 
         override fun onDestroy() {

@@ -80,7 +80,7 @@ public class testing2 extends AppCompatActivity {
             String savedFirst=savedInstanceState.getString(KEY_FIRSTNAME);
             tv.setText(savedFirst);
         }else{
-            Toast.makeText(this,"New entry", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"There are sensors connected", Toast.LENGTH_SHORT).show();
         }
 
     }

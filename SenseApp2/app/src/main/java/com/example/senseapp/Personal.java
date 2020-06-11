@@ -35,6 +35,7 @@ public class Personal extends AppCompatActivity {
 
         mEditText = findViewById(R.id.editText5);
         mEditText2= findViewById(R.id.editText6);
+        Toast.makeText(this,"There are saved values ", Toast.LENGTH_SHORT).show();
     }
 
     public void saveA(View v) {

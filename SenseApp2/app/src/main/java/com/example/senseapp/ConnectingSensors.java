@@ -68,15 +68,7 @@ public class ConnectingSensors extends AppCompatActivity {
             }
         });
 
-       //3 linhas abaixo check!!!
-       // Intent i = getIntent();
-       // String sensor= i.getExtras().getString("sensor");
-       // porto1.setText(sensor);
 
-
-       //String text = myIntent.getStringExtra("abs");
-       //TextView Info1 = findViewById(R.id.porto1);
-       //TextView.setText(abs);
     }
     public void openOne(){
         Intent intent = new Intent(this, one.class);

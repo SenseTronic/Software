@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.senseapp.ui.login.SensorActivity;
+//import com.example.senseapp.ui.login.SensorActivity;
 
 public class AfterLogIn extends AppCompatActivity {
     private Button button4;
@@ -51,6 +51,7 @@ public class AfterLogIn extends AppCompatActivity {
             }
         });
 
+        /**
         button27 = (Button) findViewById(R.id.button27);
         button27.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -58,7 +59,7 @@ public class AfterLogIn extends AppCompatActivity {
                 openSensor();
             }
         });
-
+         **/
 
     }
     public void openMeasuredData(){
@@ -80,9 +81,10 @@ public class AfterLogIn extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
     public void openSensor(){
         Intent intent = new Intent(this, SensorActivity.class);
         startActivity(intent);
     }
-
+    **/
 }

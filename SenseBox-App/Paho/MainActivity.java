@@ -63,3 +63,36 @@ public class MainActivity extends AppCompatActivity {
 
         String clientId = MqttClient.generateClientId();
         client = new MqttAndroidClient(MainActivity.this, MQTTHOST, clientId);
+
+
+        private void setSubscription(){
+            try{
+                client.subscribe(topicStr,0);
+                client.subscribe(topicStr2, 0);
+            }catch(MqttException e){
+                e.printStackTrace();
+            }
+        }
+
+        client.setCallback(new MqttCallback() {
+            @Override
+            public void connectionLost(Throwable cause) {
+
+            }
+
+            @Override
+            public void messageArrived(String topic, MqttMessage message) throws Exception {
+                if(topic.equals(topicStr)) {
+                    subText.setText("Temperature = " + new String(message.getPayload())  + " ºC");
+                }
+                if(topic.equals(topicStr2)) {
+                    subText2.setText("Humidity = " + new String(message.getPayload())  + " %");
+                }
+
+            }
+
+            @Override
+            public void deliveryComplete(IMqttDeliveryToken token) {
+
+            }
+        });
